@@ -1,0 +1,15 @@
+import { IsString } from 'class-validator';
+
+export default class CreateTaskDto {
+    @IsString()
+    title: string;
+
+    @IsString()
+    description: string;
+
+    @IsString()
+    status: string;
+
+    @IsString()
+    userId: string;
+}
